@@ -1,0 +1,26 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor
+{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(12, 1fr) /repeat(2,1fr);
+}
+.item
+{
+    background-color: bisque;
+    border: 2px solid black;
+}
+.item:nth-child(1)
+{
+    grid-column: span 2;
+}
+.item:nth-child(2)
+{
+    grid-row: span 10;
+}
