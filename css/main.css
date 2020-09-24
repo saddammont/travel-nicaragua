@@ -4,12 +4,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/*aqui comienza la maquetacion con grid*/
 .contenedor
 {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template: repeat(12, 1fr) /repeat(2,1fr);
+    grid-template: repeat(12, 1fr) /repeat(6,1fr);
 }
 .item
 {
@@ -18,9 +20,69 @@
 }
 .item:nth-child(1)
 {
-    grid-column: span 2;
+    grid-column:1/-1;
 }
 .item:nth-child(2)
 {
     grid-row: span 10;
+    grid-column: span 3;
+}
+.item:nth-child(3)
+{
+    grid-column: span 3;
+    grid-row: 12/13;
+}
+.item:nth-child(4)
+{
+    grid-column: span 3;
+    grid-row: span 6;
+}
+.item:nth-child(5)
+{
+    grid-column: span 1;
+    grid-row: span 5;
+}
+.item:nth-child(6)
+{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.item:nth-child(7)
+{
+    grid-column: span 1;
+    grid-row: span 4;
+}
+.item:nth-child(8)
+{
+    grid-column: span 1;
+    grid-row: span 4;
+}
+/*aqui comienza a ordenar el header*/
+
+.header
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.logo-menu
+{
+    display: flex;
+    align-items: center;
+    
+}
+.logo-menu li a
+{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.logo-menu li 
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+    
 }
