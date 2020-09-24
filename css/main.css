@@ -3,6 +3,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: whitesmoke;
+}
+html
+{
+    font-size: 16px;
+    
+}
+.fondo
+{
+  background-image: url(../images/Nicaragua-Ometepe-2.jpg)  ;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  background-size: cover;
+  
+    
 }
 
 /*aqui comienza la maquetacion con grid*/
@@ -15,12 +31,14 @@
 }
 .item
 {
-    background-color: bisque;
+   ;
     border: 2px solid black;
 }
 .item:nth-child(1)
 {
     grid-column:1/-1;
+    
+    
 }
 .item:nth-child(2)
 {
@@ -58,31 +76,77 @@
     grid-row: span 4;
 }
 /*aqui comienza a ordenar el header*/
-
 .header
 {
     display: flex;
-    list-style: none;
+    align-items: center;
     justify-content: space-between;
+    margin: 1rem 2rem;
+
 }
-.logo-menu
+.logo
 {
     display: flex;
     align-items: center;
-    
 }
-.logo-menu li a
+.menu ul li
 {
-    margin-left: 1rem;
+    list-style: none;
     text-decoration: none;
-    color: black;
     
-    
+    margin: 0 1rem;
+    display: inline;
 }
-.logo-menu li 
+.menu ul li a
 {
-   display: flex;
-   align-items: center;
-   justify-content: space-between; 
+    list-style: none;
+    text-decoration: none;
+    
+    margin: 0 1rem;
+}
+/* aqui comienza la parte del hero*/
+.hero
+{
+    text-shadow: black 2px 2px 3px;
+    display: block;
+    position: relative;
+    top: 25%;
+    margin-left: 1.5rem;
+    left: auto;
+    font-family: 'Playfair Display', serif;
+}
+.hero h1
+{
+    font-size: 4rem;
+}
+/* aqui va el estilo de las redes sociales*/
+
+.fa-instagram 
+{
+    text-shadow: black 1px 1px 4px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin:  0.5rem;
     
 }
+.fa-twitter 
+{
+    text-shadow: black 1px 1px 4px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin:  0.5rem;
+    
+}
+.fa-facebook 
+{
+    text-shadow: black 1px 1px 4px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin:  0.5rem;
+    
+}
+
+
